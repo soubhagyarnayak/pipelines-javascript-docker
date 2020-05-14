@@ -14,3 +14,7 @@ steps:
     repository: $(imageName)
     command: build
     Dockerfile: app/Dockerfile
+    tags: |
+      tag1
+      tag2
+      tag3

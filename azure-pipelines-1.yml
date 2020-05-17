@@ -15,7 +15,7 @@ stages:
 - stage: Build
   displayName: Build image
   jobs:  
-  - job: Build-Mac
+  - job: Build_Mac
     displayName: Build-Mac
     pool:
       vmImage: 'macOS-latest'
@@ -27,7 +27,7 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/app/Dockerfile'
         tags: |
           $(tag)
-  - job: Build-Win
+  - job: Build_Win
     displayName: Build-Win
     pool:
       vmImage: 'windows-latest'
@@ -39,7 +39,7 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/app/Dockerfile'
         tags: |
           $(tag)
-  - job: Build-Lin
+  - job: Build_Lin
     displayName: Build-Lin
     pool:
       vmImage: 'ubuntu-latest'

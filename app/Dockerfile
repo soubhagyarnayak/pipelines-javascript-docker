@@ -1,4 +1,4 @@
-FROM amd64/node:8
+FROM stefanscherer/node-wind
 
 WORKDIR /usr/src/app
 

@@ -6,7 +6,7 @@ pool:
 
 variables:
   imageName: 'pipelines-javascript-docker'
-  DOCKER_BUILTKIT: 1
+  DOCKER_BUILDKIT: 1
 
 steps:
 - task: Docker@2
